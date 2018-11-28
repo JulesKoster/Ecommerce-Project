@@ -5,6 +5,8 @@
     <title>Jules Laptopbag page</title>
     <meta name="description" content="Roughly 155 characters">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
   </head>
   <body>
@@ -14,29 +16,66 @@
             <a href="index.html">Home</a>
             <a href="#">Contact</a>
             <a href="#">Register</a>
-            <a href="#">Login</a>
+            <a href="#">Login<i class="fa fa-fw fa-user"></i>
         </div>
     </nav>
     <!-- Nav End-->
-
 <!-- Main Start-->
 <div class="main-container">
-    <div class="container">1</div> 
-    <div class="container">2
-        <div class="product-container"><img src="/img/cb_black_15.6.jpg" alt="www.google.nl" href="#"></div>
-        <div class="product-container">2</div>
-        <div class="product-container">3</div>    
+    <div class="container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="/img/zagliani_laptop_bag_black.jpg" style="width:100%">
+                <div class="text">Bag 1</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="/img/bottega_veneta_black.jpg" style="width:100%">
+                <div class="text">Bag 2</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/img/lucrin_laptop_bag_black.jpg" style="width:100%">
+                <div class="text">Bag 3</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="/img/zagliani_laptop_bag_black.jpg" style=" width:100%">
+                <div class="text">Bag 4</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <br>
+    
+        <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>   
+    </div> 
 
+    <div class="container">
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/cb_black_15.6.jpg" alt=""></a></div>
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/cb_brown15.6_2.jpg" alt=""></a></div>
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/plevier_dbrown_15.6.jpg" alt=""></a></div>
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/cb_vivo_mocca_15.6.jpg" alt=""></a></div>  
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/cb_vivo_mocca_15.6.jpg" alt=""></a></div>
+        <div class="product-container"><a href="www.google.nl"><img class ="imgproduct" src="/img/cb_vivo_black_15.6.jpg" alt=""></a></div>  
+    </div> 
 
-
-    </div>   
     <div class="container">3 
-            <div class="product-container"><img src="/img/cb_black_15.6.jpg" alt="www.google.nl" href="#"></div>
-            <div class="product-container">2</div>
-            <div class="product-container">3</div>
-            <div class="product-container">4</div>
-            <div class="product-container">5</div>
-            <div class="product-container">6</div>     
+        
+                
     </div>
 </div>
 <!-- Main End-->   
@@ -45,6 +84,6 @@
 
 
 
-
-  </body>
+<script type="text/javascript" src="slider.js"></script>
+</body>
 </html>
