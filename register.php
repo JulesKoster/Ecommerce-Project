@@ -1,7 +1,6 @@
 <?php 
     include "db_connection.php";
 
-    
 
 //retrieve our data from POST
 $user_name = $_POST["user_name"];
