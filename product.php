@@ -28,7 +28,7 @@
 
     $productID = $_GET['id'];
 
-    $sql = "SELECT brand, model, color, price, image_url FROM products WHERE productID='$productID'"; 
+    $sql = "SELECT brand, model, color, price, image_url,product_info FROM products WHERE productID='$productID'"; 
     
     $data = $conn->query($sql);     
   
@@ -41,8 +41,9 @@
         // $htmloutput.= '</a>';
         $htmlOutput.= '<h1>' . $row['brand'] . ' ' . $row['model'] . '</h1>';
         $htmlOutput.= '<p class="price">' . '<b>&euro; </b>' . $row['price'] . '</p>'; 
-        $htmlOutput.= '<p>' . '<b>Color:</b>' . ' ' . $row['color'] . '</p>'; 
-        $htmlOutput.= '<p>Product info</p>';
+        $htmlOutput.= '<p>' . '<b>Color:</b>' . ' ' . $row['color'] . '</p>';
+        $htmlOutput.= '<p>' . '<b>Product info:</b>' . '</p>' . $row['product_info'] . '</p>'; 
+        $htmlOutput.= '<p>' . '<b>More info</b>' . '</p>';
         $htmlOutput.= '<p><button>Add to Cart  <i class="fas fa-cart-plus"></i></button></p>';
         $htmlOutput.= '</div>';   
         echo $htmlOutput;
