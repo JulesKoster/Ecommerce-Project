@@ -56,7 +56,7 @@ hr {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -67,25 +67,26 @@ button {
 }
 
 button:hover {
-    opacity:1;
+  opacity:1;
 }
-  
+
 /* Extra styles for the cancel button */
 .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+  padding: 14px 20px;
+  background-color: #f44336;
 }
-  
- /* Float cancel and signup buttons and add an equal width */
+
+/* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
-  
-  /* Clear floats */
+
+/* Clear floats */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
+
   
