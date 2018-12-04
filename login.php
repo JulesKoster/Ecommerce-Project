@@ -14,6 +14,8 @@ require 'lib/password.php';
  
 
 require 'connect.php';
+include 'navbar.php';
+include 'footer.php';
  
  
 //If the POST var "login" exists (our submit button), then we can
@@ -76,13 +78,22 @@ if(isset($_POST['login'])){
         <title>Login</title>
     </head>
     <body>
-        <h1>Login</h1>
-        <form action="login.php" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
-            <input type="submit" name="login" value="Login">
-        </form>
+        <div class="form-wrapper">
+            <div class="contact-form">
+            <h1>Login</h1>
+            <form action="login.php" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required><br>
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="Enter your password" required><br>
+                <button type="submit" class="login" value=Legister">Login</button>
+            </form>
+            </div>          
+        
+            <div class="image-box-right">
+            <img src="img/laptop_login.jpg" alt="login">
+            </div>    
+        </div>  
+    </div>
     </body>
 </html>

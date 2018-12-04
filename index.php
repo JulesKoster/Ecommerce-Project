@@ -1,4 +1,5 @@
-<?php 
+<?php
+include 'navbar.php' 
 ?>
 
 <!DOCTYPE html>
@@ -12,23 +13,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
   <body>
-    <!-- Nav Start-->
+    <!-- Nav Start
     <nav>
         <div class="navbar">
             <a href="index.php">Home</a>
-            <!-- <a href="#">Contact</a> -->
             <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
             <a href="login.php">Login<i class="fa fa-fw fa-user"></i></a>
         </div>
     </nav>
-    <!-- Nav End-->
+     Nav End-->
 <!-- Main Start-->
 <div class="main-container">
         <div class="container"> 
         <div class="container-top"><!--<a href="www.google.nl">--><img class ="imgproduct" src="img/plevier_man_black_white.jpg" alt=""></a>
         <div class="text-centered">Da Costa Exclusive Laptopbags</div>
         </div>  
-    <div class="container" >
+    <div class="container">
         <div class="product-container"><a href="product.php?id=1"><img class ="imgproduct" src="img/cb_black_15.6.jpg"" alt=""></a></div>
         <div class="product-container"><a href="product.php?id=2"><img class ="imgproduct" src="img/cb_brown15.6_2.jpg"" alt=""></a></div>
         <div class="product-container"><a href="product.php?id=6"><img class ="imgproduct" src="img/cb_vivo_black_15.6.jpg"" alt=""></a></div>

@@ -1,4 +1,3 @@
-
 <?php
  
 //register.php
@@ -17,7 +16,6 @@ require 'lib/password.php';
  * Include our MySQL connection.
  */
 require 'connect.php';
-
 include 'navbar.php';
 include 'footer.php';
  
@@ -89,15 +87,24 @@ if(isset($_POST['register'])){
     <head>
         <meta charset="UTF-8">
         <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <h1>Register</h1>
-        <form action="register.php" method="post">
+        <div class="form-wrapper">
+            <div class="contact-form">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required><br>
             <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
-            <input type="submit" name="register" value="Register"></button>
-        </form>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+            <button type="submit" class="register" value=Register">Sign Up</button>
+            </form>
+            
+        </div>
+            <div class="image-box-right">
+            <img src="img/register.jpg" alt="register">
+            </div>    
+        </div>          
     </body>
 </html>

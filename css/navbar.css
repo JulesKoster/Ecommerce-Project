@@ -3,13 +3,13 @@ body {
     padding:0;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
-    }
+}
 .navbar {
     background-color: #120F1D;
     overflow: hidden;
     height: 60px;
     margin-bottom: 20px;
-    }
+}
     
 .navbar-right a {
     float: right;
