@@ -1,10 +1,13 @@
+<?php 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Da Costa Laptopbag page</title>
     <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
@@ -12,10 +15,10 @@
     <!-- Nav Start-->
     <nav>
         <div class="navbar">
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
             <!-- <a href="#">Contact</a> -->
-            <a href="register.html">Register<i class="fas fa-user-plus"></i></a>
-            <a href="login.html">Login<i class="fa fa-fw fa-user"></i></a>
+            <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
+            <a href="login.php">Login<i class="fa fa-fw fa-user"></i></a>
         </div>
     </nav>
     <!-- Nav End-->
@@ -25,7 +28,7 @@
         <div class="container-top"><!--<a href="www.google.nl">--><img class ="imgproduct" src="img/plevier_man_black_white.jpg" alt=""></a>
         <div class="text-centered">Da Costa Exclusive Laptopbags</div>
         </div>  
-    <div class="container" id="productwrap">
+    <div class="container" >
         <div class="product-container"><a href="product.php?id=1"><img class ="imgproduct" src="img/cb_black_15.6.jpg"" alt=""></a></div>
         <div class="product-container"><a href="product.php?id=2"><img class ="imgproduct" src="img/cb_brown15.6_2.jpg"" alt=""></a></div>
         <div class="product-container"><a href="product.php?id=6"><img class ="imgproduct" src="img/cb_vivo_black_15.6.jpg"" alt=""></a></div>
@@ -34,11 +37,22 @@
         <div class="product-container"><a href="product.php?id=3"><img class ="imgproduct" src="img/plevier_dbrown_15.6.jpg"" alt=""></a></div>
                     
     </div> 
+    
+    <!-- <div class="container" id="bg-image">
+        <div class="bg-image">
+        <a href="www.google.nl"><img src="img/Castelijn_und_Beerens_marken_banner_fs18.jpg" alt=""></a> 
+        <div class="bg-text"><h1>Castelijn & Beerens</h1>
+        <p>Official Reseller</p>
+        </div>
+        </div>  
+    </div> -->
+
 
         
     <div class="container">
+        <div class="slideshow-wrapper">
             <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="slideshow">
         
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
@@ -75,8 +89,8 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-            </div>   
+                </div>             
+        </div>
         </div>            
     </div>
 </div>
@@ -85,24 +99,24 @@
 <div class="footer-top"> </div>
 <div class="footer-main"></div>
 <div class="footer-bottom">
-    <div class="social-media">
+    <div class="social-media"><br>
             <span>Be sure to check out our Social Media Pages</span>
         <ul class="icons">
             <li>
                 <img src="img/footer/icons/if_2018_social_media_popular_app_logo_instagram_3225191.png" width="32" height="32">
-                <p><a href="https://www.facebook.com/" target="_blank"></a>Instagram</p>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
             </li>
             <li>
                 <img src="img/footer/icons/if_2018_social_media_popular_app_logo_facebook_3225194.png" width="32" height="32">
-                <p><a href="https://www.facebook.com/" target="_blank"></a>Facebook</p>
+                <p><a href="https://www.facebook.com/laptopbagscouk/" target="_blank">Facebook</a></p>
             </li>
             <li>
                 <img src="img/footer/icons/if_2018_social_media_popular_app_logo_twitter_3225183.png" width="32" height="32">
-                <p><a href="https://twitter.com/" target="_blank"></a>Twitter</p>
+                <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
             </li>
             <li>
                 <img src="img/footer/icons/if_2018_social_media_popular_app_logo_youtube_3225180.png" width="32" height="32">
-                <p><a href="http://www.youtube.com/" target="_blank"></a>Youtube</p>
+                <p><a href="http://www.youtube.com/" target="_blank">Youtube</a></p>
             </li>
          </ul>
             <span class="copyright">&#9400; Da Costa Exclusive</span>
@@ -116,6 +130,6 @@
 
 
 
-<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>

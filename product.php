@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Product</title>
     <meta name="description" content="Roughly 155 characters">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
@@ -16,8 +16,8 @@
     <div class="navbar">
     <a href="index.html">Home</a>
     <!-- <a href="#">Contact</a> -->
-    <a href="register.html">Register<i class="fas fa-user-plus"></i></a>
-    <a href="login.html">Login<i class="fa fa-fw fa-user"></i></a>      
+    <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
+    <a href="login.php">Login<i class="fa fa-fw fa-user"></i></a>      
     </div>
 </nav>
 <!-- Nav End-->
