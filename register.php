@@ -17,6 +17,9 @@ require 'lib/password.php';
  * Include our MySQL connection.
  */
 require 'connect.php';
+
+include 'navbar.php';
+include 'footer.php';
  
  
 //If the POST var "register" exists (our submit button), then we can

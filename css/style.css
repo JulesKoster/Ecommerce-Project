@@ -251,20 +251,26 @@ text-align: center;
     to {opacity: 1}
 }
 
-footer {
-    display:block;
-    background-color:#120F1D;
-    border:2px, solid darkgray;
-    height:300px;
- 
-    }
+.footer-wrap {
+    position: absolute;
+    display: block;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    right:0;
+    bottom:0;
+    left:0;
+    /* border: 2px solid yellow; */
+
+}    
 
 .footer-bottom {
+    position:relative;
     display:block;
     float: center;
     background-color:#120F1D;
     /* border:2px solid darkgray; */
-    margin: 10px;
+    /* margin: 10px; */
     height: 300px;
     color:white;
     text-align: center;
