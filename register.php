@@ -1,5 +1,5 @@
 <?php
- 
+
 //register.php
  
 /**
@@ -18,7 +18,9 @@ require 'lib/password.php';
 require 'connect.php';
 include 'navbar.php';
 include 'footer.php';
- 
+
+$message;
+$showMessage = false;
  
 //If the POST var "register" exists (our submit button), then we can
 //assume that the user has submitted the registration form.
@@ -57,9 +59,7 @@ if(isset($_POST['register'])){
     
     //Hash the password as we do NOT want to store our passwords in plain text.
     $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
-    
-    //Prepare our INSERT statement.
-    //Remember: We are inserting a new row into our users table.
+       
     $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
     $stmt = $pdo->prepare($sql);
     
@@ -73,15 +73,14 @@ if(isset($_POST['register'])){
     //If the signup process is successful.
     if($result){
         //What you do here is up to you!
-        echo 'Thank you for registering with our website.';
-        //Redirect to our protected page, which we called home.php
-        header('Location: user.home.php');
-        exit;
+        $message =  'Thank you for registering with our website.';
+        $showMessage = true;
     }
     
 }
  
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -95,16 +94,36 @@ if(isset($_POST['register'])){
             <h1>Register</h1>
             <form action="register.php" method="post">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
-            <button type="submit" class="register" value=Register">Sign Up</button>
+            <input type="text" id="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit" class="register" name="register" value="Register">Sign Up</button>
             </form>
-            
-        </div>
+            <?php if($showMessage){ echo $message;
+            }
+            ?>
+            </div>
+        
             <div class="image-box-right">
             <img src="img/register.jpg" alt="register">
             </div>    
         </div>          
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

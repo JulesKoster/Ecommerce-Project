@@ -1,23 +1,22 @@
 <?php
- 
 //login.php
- 
+
 /**
  * Start the session.
  */
 session_start();
- 
+
 /**
  * Include ircmaxell's password_compat library.
  */
 require 'lib/password.php';
- 
 
+/**
+ * Include our MySQL connection.
+ */
 require 'connect.php';
-include 'navbar.php';
-include 'footer.php';
- 
- 
+
+
 //If the POST var "login" exists (our submit button), then we can
 //assume that the user has submitted the login form.
 if(isset($_POST['login'])){
@@ -59,7 +58,7 @@ if(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
             
             //Redirect to our protected page, which we called home.php
-            header('Location: user.home.php');
+            header('Location: home.php');
             exit;
             
         } else{
@@ -71,29 +70,40 @@ if(isset($_POST['login'])){
 }
  
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div class="form-wrapper">
             <div class="contact-form">
             <h1>Login</h1>
             <form action="login.php" method="post">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required><br>
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password" placeholder="Enter your password" required><br>
-                <button type="submit" class="login" value=Legister">Login</button>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit" class="login" name="login" value="Login">Login</button>
             </form>
-            </div>          
+            </div>
         
             <div class="image-box-right">
-            <img src="img/laptop_login.jpg" alt="login">
+            <img src="img/register.jpg" alt="register">
             </div>    
-        </div>  
-    </div>
+        </div>          
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+

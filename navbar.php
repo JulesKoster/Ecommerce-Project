@@ -16,7 +16,9 @@
         <div class="navbar">
           <div class="navbar-left">
             <a href="index.php">Home<i class="fas fa-home"></i></a>
+            <div class="welcome-user">
             <a href="">Welcome ""</a>
+        </div>  
           </div>  
           <div class="navbar-right">  
             <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
