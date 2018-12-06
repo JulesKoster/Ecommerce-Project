@@ -36,7 +36,7 @@
         $htmlOutput.= '<p>' . '<b>Color:</b>' . ' ' . $row['color'] . '</p>';
         $htmlOutput.= '<p>' . '<b>Product info:</b>' . '</p>' . $row['product_info'] . '</p>'; 
         $htmlOutput.= '<p>' . '<b>More info</b>' . '</p>';
-        $htmlOutput.= '<p><button>Add to Cart  <i class="fas fa-cart-plus"></i></button></p>';
+        $htmlOutput.= '<p><button><a href ="addtocart.php?id=' . $productID . '"> Add to Cart   <i class="fas fa-cart-plus"></i></a></button></p>';
         $htmlOutput.= '</div>';   
         echo $htmlOutput;
     }  

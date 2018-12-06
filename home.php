@@ -6,7 +6,7 @@
  * Start the session.
  */
 session_start();
- 
+include 'navbar.php'; 
  
 /**
  * Check if the user is logged in.
@@ -16,10 +16,33 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
     header('Location: index.php');
     exit;
 }
- 
- 
-/**
- * Print out something that only logged in users can see.
- */
- 
-echo 'Congratulations! You are logged in to Da Costa Exclusive Laptop bags!';
+// echo 'Congratulations! You are logged in to Da Costa Exclusive Laptop bags!';
+// header('index.php');
+
+?> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <div class="contact-form">
+            <h1>Succes</h1>
+                  
+            <?php echo 'You are logged in to Da Costa Exclusive Laptop bags!'
+            
+            ?>
+            </div>
+        
+            <div class="image-box-right">
+            <img src="img/register.jpg" alt="register">
+            </div>    
+        </div>          
+    </body>
+</html>
+
+

@@ -96,7 +96,7 @@ if(isset($_POST['register'])){
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your username"><br>
             <label for="password">Password</label>
-            <input type="text" id="password" name="password" placeholder="Enter your password"><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
             <button type="submit" class="register" name="register" value="Register">Sign Up</button>
             </form>
             <?php if($showMessage){ echo $message;

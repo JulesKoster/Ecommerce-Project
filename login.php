@@ -15,6 +15,8 @@ require 'lib/password.php';
  * Include our MySQL connection.
  */
 require 'connect.php';
+include 'navbar.php';
+include 'footer.php';
 
 
 //If the POST var "login" exists (our submit button), then we can
@@ -56,9 +58,10 @@ if(isset($_POST['login'])){
             //Provide the user with a login session.
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['logged_in'] = time();
+            $_SESSION['username'] = $user['username'];
             
             //Redirect to our protected page, which we called home.php
-            header('Location: home.php');
+             header('Location: index..php');
             exit;
             
         } else{
