@@ -14,6 +14,7 @@
 
 <!-- Product info Start -->
 <?php
+    session_start();
     include 'db_connection.php';
     include 'navbar.php';
     

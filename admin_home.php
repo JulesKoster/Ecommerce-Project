@@ -33,14 +33,14 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
             <div class="contact-form">
             <h1>Succes</h1>
                   
-            <?php echo 'You are logged in to Da Costa Exclusive Laptop bags!';
+            <?php echo 'Welcome'. ' '  . $_SESSION['role'] . ' ' . $_SESSION['username']. ' '. 'The Main Man';
                   
                     
             ?>
             </div>
         
             <div class="image-box-right">
-            <img src="img/register.jpg" alt="register">
+            <img src="img/admindatabase.jpg" alt="register">
             </div>    
         </div>          
     </body>

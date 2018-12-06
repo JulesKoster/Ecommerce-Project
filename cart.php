@@ -1,9 +1,8 @@
 <?php
+session_start();
 
 include 'connect.php';
 include 'navbar.php';
-
-session_start();
 
 $productCustomer = implode (',' , $_SESSION['addtocart']);
 

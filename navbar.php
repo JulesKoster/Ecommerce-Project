@@ -14,13 +14,19 @@
         <div class="navbar">
           <div class="navbar-left">
             <a href="index.php">Home<i class="fas fa-home"></i></a>
+
+            <?php 
             
-            <a href=""> </a> <?php if(isset($_SESSION['username'])) {
-            echo 'welcome' . $_SESSION['username'] ;} ?> 
-            <div class="welcome-user">
-            <p> whats up dog </p>
-            </div>  
-          </div>  
+            
+            if (isset($_SESSION['role']) and ($_SESSION['role'] == 'admin')) {
+            echo '<div class="welcome-user">' . '<a href="admin_home.php">Logged in as : ' . $_SESSION['username'] . '</a></div>';             
+            } 
+            else if (isset($_SESSION['username'])) {
+            echo '<div class="welcome-user">' . '<a href="home.php">Logged in as : ' . $_SESSION['username'] . '</a></div>' ;
+          } 
+            ?> 
+            </div>               
+           
           <div class="navbar-right">  
             <a href="cart.php">Shopping Cart<i class="fas fa-cart-plus"></i></a>
             <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
@@ -28,6 +34,7 @@
           </div>
         </div>
     </nav>
+    
     <!-- Nav End-->
     </body>
     </html>
