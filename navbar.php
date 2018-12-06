@@ -30,7 +30,9 @@
           <div class="navbar-right">  
             <a href="cart.php">Shopping Cart<i class="fas fa-cart-plus"></i></a>
             <a href="register.php">Register<i class="fas fa-user-plus"></i></a>
+            <a href="logout.php">Logout<i class="fas fa-sign-out-alt"></i></a>
             <a href="login.php">Login<i class="fa fa-fw fa-user"></i></a>
+            
           </div>
         </div>
     </nav>

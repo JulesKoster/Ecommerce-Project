@@ -62,13 +62,14 @@ if(isset($_POST['login'])){
             $_SESSION['role'] = $user['role'];
             
             //Redirect to our protected page, which we called home.php
-            header('Location: home.php');
-            // header('refresh: 1 ; Location: home.php');
+            header('Refresh: 1 ; url=home.php');
             exit;
             
         } else{
             //$validPassword was FALSE. Passwords do not match.
-            die('Incorrect username / password combination!');
+            // die
+            echo ('Incorrect username / password combination!, Please try Again');
+            header ('Refresh: 1 ; url=login.php');
         }
     }
     
