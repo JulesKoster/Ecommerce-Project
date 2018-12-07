@@ -23,7 +23,8 @@
 
     $sql = "SELECT brand, model, color, price, image_url,product_info FROM products WHERE productID='$productID'"; 
     
-    $data = $conn->query($sql);     
+     $data = $conn->query($sql); 
+       
   
      foreach ($data as $row)
     {   

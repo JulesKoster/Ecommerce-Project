@@ -96,6 +96,7 @@ include 'navbar.php'
         </div>
         </div>            
     </div>
+    <button onclick="topFunction()" id="buttonTop" title="Go to top">Top</button>
 </div>
 <!-- Main End-->   
 <footer>
@@ -133,6 +134,6 @@ include 'navbar.php'
 
 
 
-<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

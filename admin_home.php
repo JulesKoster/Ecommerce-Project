@@ -38,10 +38,18 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
                 <input type="text" id="brand" name="brand" placeholder="Enter brand"><br>
                 <label for="model">Model</label>
                 <input type="text" id="model" name="model" placeholder="Enter model"><br>
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" placeholder="Enter color"><br>
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" placeholder="Enter price"><br>
+                <label for="image_url">Image Url</label>
+                <input type="text" id="image_url" name="image_url" placeholder="Enter Image Url"><br>
+                <label for="product_info">Product Info</label>
+                <input type="text" id="product_info" name="product_info" placeholder="Enter Product Info"><br>
                 <button type="submit" class="addproduct" name="addproduct" value="Add Product">Add product</button>
                 </form>
 
-            <?php echo 'Welcome'. ' '  . $_SESSION['role'] . ' ' . $_SESSION['username']. ' '. 'The Main Man';
+            <?php echo 'Welcome'. ' '  . $_SESSION['role'] . ' ' . $_SESSION['username']. ' '. '';
             ?>
 
             </div>    
