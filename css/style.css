@@ -347,9 +347,13 @@ button {
     border: none;
     cursor: pointer;
     width:25%;
-    opacity: 0.9;
-  }
-  
+    opacity: 0.9;        
+}
+
+button a {
+    color: white;
+}
+
 button:hover {
     opacity:1;
   }
