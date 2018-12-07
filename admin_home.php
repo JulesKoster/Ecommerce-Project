@@ -31,13 +31,27 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
     <body>
         <div class="form-wrapper">
             <div class="contact-form">
-            <h1>Succes</h1>
-                  
+                <h1>Admin page Da Costa Exclusive laptop bags</h1>
+            
+                <form action="addproduct.php" method="post">
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" name="brand" placeholder="Enter brand"><br>
+                <label for="model">Model</label>
+                <input type="text" id="model" name="model" placeholder="Enter model"><br>
+                <button type="submit" class="addproduct" name="addproduct" value="Add Product">Add product</button>
+                </form>
+
             <?php echo 'Welcome'. ' '  . $_SESSION['role'] . ' ' . $_SESSION['username']. ' '. 'The Main Man';
+            ?>
+
+            </div>    
+
+
+            
                   
                     
-            ?>
-            </div>
+            
+           
         
             <div class="image-box-right">
             <img src="img/admindatabase.jpg" alt="register">

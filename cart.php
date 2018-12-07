@@ -3,6 +3,14 @@ session_start();
 
 include 'connect.php';
 include 'navbar.php';
+include 'footer.php';
+
+
+if (empty($_SESSION['addtocart'])) {
+  echo 'Your shopping cart is empty';
+} else
+
+{
 
 $productCustomer = implode (',' , $_SESSION['addtocart']);
 
@@ -22,6 +30,7 @@ foreach ($data as $row){
         $htmlOutput.= '<p>' . '<b>Product info:</b>' . '</p>' . $row['product_info'] . '</p>'; 
         $htmlOutput.= '</div>';
         echo $htmlOutput;
+}
 }
 ?>
 
