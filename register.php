@@ -105,7 +105,7 @@ if(isset($_POST['register'])){
             </div>
         
             <div class="image-box-right">
-            <img src="img/register.jpg" alt="register">
+            <img src="img/womanlaptop.jpg" alt="register">
             </div>    
         </div>          
     </body>

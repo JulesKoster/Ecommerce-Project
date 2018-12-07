@@ -3,11 +3,12 @@ session_start();
 
 include 'connect.php';
 include 'navbar.php';
-include 'footer.php';
+
 
 
 if (empty($_SESSION['addtocart'])) {
   echo 'Your shopping cart is empty';
+  header ('Refresh: 2 ; url=index.php');
 } else
 
 {

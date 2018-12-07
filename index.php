@@ -60,19 +60,19 @@ include 'navbar.php'
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 4</div>
-                    <img src="img/zagliani_laptop_bag_black.jpg" style="width:100%">
+                    <img src="img/zagliani_laptop_bag_blackresize.jpg" style="width:100%">
                     <div class="text">Zagliani Laptop Bag &#8364;2000 </div>
                 </div>
         
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 4</div>
-                    <img src="img/bottega_veneta_black.jpg" style="width:100%">
+                    <img src="img/bottega_veneta_blackresize.jpg" style="width:100%">
                     <div class="text">Bottega Veneta &#8364;2650</div>
                 </div>
         
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 4</div>
-                    <img src="img/lucrin_laptop_bag_black.jpg" style="width:100%">
+                    <img src="img/lucrin_laptop_bag_blackresize.jpg" style="width:100%">
                     <div class="text">Lucrin Laptop Bag, Real Ostrich Leather &#8364;4650</div>
                 </div>
                 <div class="mySlides fade">

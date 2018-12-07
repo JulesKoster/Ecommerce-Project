@@ -98,7 +98,7 @@ if(isset($_POST['login'])){
             </div>
         
             <div class="image-box-right">
-            <img src="img/laptop_login.jpg" alt="login">
+            <img src="img/dell_xps15_login.jpg" alt="login">
             </div>    
         </div>          
     </body>
